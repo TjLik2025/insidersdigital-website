@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Insiders Digital — Unique & Engaging Software</title>
-  <meta name="description" content="Insiders Digital Pty Ltd develops and distributes unique and engaging software. Home of Guilty Party — the daily mystery puzzle game." />
+  <title>Insiders Digital — Unique &amp; Engaging Software</title>
+  <meta name="description" content="Insiders Digital Pty Ltd develops and distributes unique and engaging software. Home of Guilty Party, the daily mystery puzzle game, and Snowhaven Inn, a story-driven merge game." />
   <link rel="icon" href="assets/img/guilty-party-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -281,6 +281,14 @@
       margin-top: 2rem;
     }
 
+    .app-feature.reverse .app-feature-text { order: 2; }
+    .app-feature.reverse .screenshots { order: 1; }
+
+    @media (max-width: 768px) {
+      .app-feature.reverse .app-feature-text { order: 1; }
+      .app-feature.reverse .screenshots { order: 2; }
+    }
+
     /* ABOUT */
     #about { background: var(--black); }
 
@@ -453,6 +461,25 @@
         <div class="screenshots">
           <img src="assets/img/guilty-party-home.png" alt="Guilty Party home screen" />
           <img src="assets/img/guilty-party-reveal.png" alt="Guilty Party verdict reveal" />
+        </div>
+      </div>
+
+      <div class="app-feature reverse">
+        <div class="app-feature-text">
+          <div class="app-badge">❄ Story-Driven Merge Game</div>
+          <h2>Snowhaven Inn</h2>
+          <p>A letter from a solicitor. A brass key. An inn at the top of a snowbound hill, left to you by a woman you have never met. Merge to bring Snowhaven back from the cold, room by room — and find the notes she hid in every one.</p>
+          <ul class="feature-list">
+            <li>Merge items to craft firewood, linens, lamps and bread — every delivery brings another room back to life</li>
+            <li>A hidden note in every room you restore, and the dates get closer each time</li>
+            <li>Thirty-one lanterns, one for every window — and a promise someone made to come home</li>
+            <li>Seasonal live events that are part of the story, not a grind beside it</li>
+          </ul>
+          <a href="#" class="app-store-btn coming-soon">Coming Soon to the App Store &amp; Google Play</a>
+        </div>
+        <div class="screenshots">
+          <img src="assets/img/snowhaven-ledger.jpg" alt="Snowhaven Inn — the Lantern Ledger at night" />
+          <img src="assets/img/snowhaven-characters.jpg" alt="Snowhaven Inn — Mrs. Hollis and Odette in the lobby" />
         </div>
       </div>
     </div>
